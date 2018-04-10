@@ -13,7 +13,7 @@ import { ButtonModule } from './modules/button/button.module';
   ],
   imports: [
     BrowserModule,
-    SpinnerModule
+    SpinnerModule,
     ButtonModule
   ],
   providers: [],
