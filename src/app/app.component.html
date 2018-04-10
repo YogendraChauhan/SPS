@@ -1,1 +1,31 @@
 <sps-spinner [options]="{'color':'#FFF000', 'size':'50px','zIndex':'2000', 'position':'top-left'}"></sps-spinner>
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>SPS Buttons</h3>
+    </div>
+  </div>
+  <div class="row btn-toolbar text-center">
+    <div class="col-md-2">
+      <sps-button [options]="defaultButtonConfig" (click)="onSubmit($event)"></sps-button>
+    </div>
+    <div class="col-md-2">
+      <sps-button [options]="primaryButtonConfig" (click)="onSubmit($event)"></sps-button>
+    </div>
+    <div class="col-md-2">
+      <sps-button [options]="successButtonConfig" (click)="onClick($event)"></sps-button>
+    </div>
+    
+    <div class="col-md-2">
+      <sps-button [options]="dangerButtonConfig" (click)="onSubmit($event)"></sps-button>
+    </div>
+    <div class="col-md-2">
+      <sps-button [options]="warnButtonConfig" (click)="onSubmit($event)"></sps-button>
+    </div>
+    <div class="col-md-2">
+      <sps-button [options]="linkButtonConfig" (click)="onSubmit($event)"></sps-button>
+    </div>
+  </div>
+</div>
