@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, HostBinding } from '@angular/core';
-import { SpinnerConfig } from './spinner.interface';
+import { SpinnerConfig } from './spinner.config';
 
 @Component({
   selector: 'sps-spinner',
