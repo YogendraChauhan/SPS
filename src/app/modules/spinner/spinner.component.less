@@ -1,0 +1,45 @@
+.loader {
+    box-sizing: border-box;
+    position: absolute;  
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-top: 2px solid #07d;
+    border-right: 2px solid transparent;
+	animation: spinner .6s linear infinite;
+	-webkit-animation: spinner .6s linear infinite;
+}
+
+.top-left
+{
+	top:10px;
+	left:10px;
+}
+
+.top-right{
+	top:10px;
+	right:10px;
+}
+
+.bottom-left
+{
+	bottom:10px;
+	left:10px;
+}
+
+.bottom-right{
+	bottom:10px;
+	right:10px;
+}
+
+.center
+{
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+  
+@keyframes spinner{to{transform:rotate(360deg)}}
+@-webkit-keyframes spinner{to{transform:rotate(360deg)}}
