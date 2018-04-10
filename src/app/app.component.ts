@@ -11,6 +11,7 @@ import { ButtonConfig } from './modules/button/button.config';
 })
 
 export class AppComponent {
+
   public defaultButtonConfig: ButtonConfig;
   public primaryButtonConfig: ButtonConfig;
   public successButtonConfig: ButtonConfig;
@@ -68,10 +69,6 @@ export class AppComponent {
     };
   }
 
-  size = (length, sides) => {
-    alert(length / sides);
-  }
-
   public onSubmit(event): void {
     const button = event.target.innerText;
     alert(button + ' clicked');
@@ -80,6 +77,5 @@ export class AppComponent {
   public onClick(event): void {
     const button = event.target.innerText;
     alert(button + ' clicked');
-    this.size(6, 2);
   }
 }

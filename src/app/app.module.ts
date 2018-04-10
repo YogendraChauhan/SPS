@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 
 // Local imports
 import { AppComponent } from './app.component';
+import { SpinnerModule } from './modules/spinner/spinner.module';
 import { ButtonModule } from './modules/button/button.module';
-
 
 @NgModule({
   declarations: [
@@ -13,6 +13,7 @@ import { ButtonModule } from './modules/button/button.module';
   ],
   imports: [
     BrowserModule,
+    SpinnerModule
     ButtonModule
   ],
   providers: [],
