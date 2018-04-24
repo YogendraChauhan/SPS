@@ -1,22 +1,28 @@
 <div class="container-fluid h-100">
   <div class="row h-100" id="main_container">
-    <div class="col-md-3 h-100 bg-dark comps">
-      <nav class="navbar navbar-dark">
-        <!-- Links -->
+    <!-- Header -->  
+    <header class="navbar navbar-dark bg-primary">
+          <a class="navbar-brand" href="javascript:void(0);">
+            <img src="assets/images/icons/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            SPS UI Components
+          </a>
+        </header>
+    <!-- Sidebar -->
+    <div class="col-md-2 h-100 bg-light sidebar"> 
+      <nav class="navbar navbar-light">
+        <!-- Sidebar Links -->
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="navbar-brand" href="javascript:void(0)">SPS Components</a>
-              </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/spinner/overview" routerLinkActive="active-link">Spinner</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/button/overview" routerLinkActive="active-link">Buttons</a>
+            <a class="nav-link" routerLink="/button/overview" routerLinkActive="active-link">Button</a>
           </li>
         </ul>
       </nav>
     </div>
-    <div class="col-md-9 h-100 overview">
+    <!-- Page Content -->
+    <div class="col-md-10 h-100 page-content">
       <router-outlet></router-outlet>
     </div>
   </div>
