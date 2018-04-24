@@ -1,0 +1,23 @@
+<h3>SPS Buttons</h3>
+
+<div class="row btn-toolbar text-center">
+  <div class="col-md-2">
+    <sps-button [options]="defaultButtonConfig" (click)="onSubmit($event)"></sps-button>
+  </div>
+  <div class="col-md-2">
+    <sps-button [options]="primaryButtonConfig" (click)="onSubmit($event)"></sps-button>
+  </div>
+  <div class="col-md-2">
+    <sps-button [options]="successButtonConfig" (click)="onClick($event)"></sps-button>
+  </div>
+  
+  <div class="col-md-2">
+    <sps-button [options]="dangerButtonConfig" (click)="onSubmit($event)"></sps-button>
+  </div>
+  <div class="col-md-2">
+    <sps-button [options]="warnButtonConfig" (click)="onSubmit($event)"></sps-button>
+  </div>
+  <div class="col-md-2">
+    <sps-button [options]="linkButtonConfig" (click)="onSubmit($event)"></sps-button>
+  </div>
+</div>

@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "sps",
       "styles": [
-        "styles.less",
+        "styles.sass",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
         "../node_modules/font-awesome/css/font-awesome.css"
       ],
@@ -56,7 +56,7 @@
     }
   },
   "defaults": {
-    "styleExt": "less",
+    "styleExt": "sass",
     "component": {}
   }
 }
