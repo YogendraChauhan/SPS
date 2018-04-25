@@ -1,5 +1,12 @@
-<sps-spinner [options]="{'color':'#FFF000', 'size':'50px','zIndex':'2000', 'position':'top-left'}"></sps-spinner>
-<sps-spinner [options]="{'color':'#000000', 'size':'50px','zIndex':'2000', 'position':'top-right'}"></sps-spinner>
-<sps-spinner [options]="{'color':'#888888', 'size':'50px','zIndex':'2000', 'position':'center'}"></sps-spinner>
-<sps-spinner [options]="{'color':'#FF0000', 'size':'50px','zIndex':'2000', 'position':'bottom-left'}"></sps-spinner>
-<sps-spinner [options]="{'color':'#FF5733', 'size':'50px','zIndex':'2000', 'position':'bottom-right'}"></sps-spinner>
+<ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="examples" routerLinkActive="active">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="api" routerLinkActive="active">API</a>
+        </li>
+      </ul>
+    
+      <div class="page-content">
+        <router-outlet></router-outlet>
+      </div>

@@ -4,7 +4,7 @@
     <header class="navbar navbar-dark bg-primary">
           <a class="navbar-brand" href="javascript:void(0);">
             <img src="assets/images/icons/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-            SPS UI Components
+            SPS - {{title || 'UI Components'}}
           </a>
         </header>
     <!-- Sidebar -->
@@ -22,7 +22,7 @@
       </nav>
     </div>
     <!-- Page Content -->
-    <div class="col-md-10 h-100 page-content">
+    <div class="col-md-10 h-100">
       <router-outlet></router-outlet>
     </div>
   </div>

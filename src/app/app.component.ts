@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 // Local imports
 import { ButtonConfig } from './modules/button/button.config';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'sps-root',
@@ -11,5 +12,12 @@ import { ButtonConfig } from './modules/button/button.config';
 })
 
 export class AppComponent {
-  constructor() { }
+  public title:string;
+  constructor(private router:Router, private route:ActivatedRoute) { 
+    router.events.subscribe(event => {
+      if(event instanceof NavigationEnd) {
+        this.title = route.firstChild.snapshot.data.title;
+      }
+    });
+  }
 }
