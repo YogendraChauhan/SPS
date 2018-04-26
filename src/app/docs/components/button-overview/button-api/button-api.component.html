@@ -1,43 +1,54 @@
 <div class="api-doc-component">
-  <h3>
-    <span>
-      Standard Button
-    </span>
-  </h3>
-  <div>
-    <h5>
-      <span class="badge badge-success">Directive</span>
-    </h5>
-  </div>
-  <p class="content">SPS styled standard buttons.</p>
+  <section>
+    <h3>
+      <span>
+        Standard Button
+      </span>
+    </h3>
+    <div>
+      <h5>
+        <span class="badge badge-success">Directive</span>
+      </h5>
+    </div>
+    <p class="content">SPS styled standard buttons.</p>
+  </section>
   <section>
     <h4>
       Selector
-      <small>[spsStandardButton]</small>
+      <small>spsStandardButton</small>
     </h4>
+    <h6 *ngIf="exportedAs">
+      Exported as
+      <small>
+        <code>{{exportedAs}}</code>
+      </small>
+    </h6>
   </section>
   <section>
     <h4>Inputs</h4>
-    <table class="table table-sm">
-      <tbody>
-        <tr>
-          <td class="label-cell">
-            <code>property</code>
-            <br/>
-          </td>
-          <td class="label-cell">
-            <p>Description</p>
-            <div class="meta">
+    <div class="sps-table-container">
+      <table class="sps-table">
+        <thead></thead>
+        <tbody>
+          <tr class="sps-table__row">
+            <td class="sps-table__cell">
+              <code>property</code>
+              <br/>
+            </td>
+            <td class="sps-table__cell">
+              <p>Description</p>
+              <div class="meta">
                 <i>Type: </i>
                 <code>type</code>
-            </div>
-            <div class="meta">
+              </div>
+              <div class="meta">
                 <i>Default value: </i>
                 <code>value</code>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 </div>

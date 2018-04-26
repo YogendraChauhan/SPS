@@ -1,7 +1,7 @@
 <div class="component-demo">
   <h2>Standard Button</h2>
-  <div class="card">
-    <div class="card-body">
+  <div class="spa-card">
+    <div class="sps-card__body">
       <div class="row">
         <div class="col-md-9 btn-group">
           <div class="col-md-2">
@@ -16,6 +16,9 @@
           <div class="col-md-2">
             <sps-button [options]="keyButtonConfig" (click)="onSubmit($event)"></sps-button>
           </div>
+          <div class="col-md-2">
+              <sps-button [options]="daisabledButtonConfig" (click)="onSubmit($event)"></sps-button>
+            </div>
         </div>
       </div>
       <hr/>

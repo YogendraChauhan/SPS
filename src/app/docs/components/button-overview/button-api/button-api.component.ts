@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button-api.component.sass']
 })
 export class ButtonApiComponent implements OnInit {
+  public exportedAs: string;
 
-  constructor() { }
+  constructor() { 
+    this.exportedAs = '';
+  }
 
   ngOnInit() {
+    this.exportedAs = 'spsButton';
   }
 
 }

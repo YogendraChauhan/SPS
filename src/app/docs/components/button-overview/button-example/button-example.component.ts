@@ -12,7 +12,8 @@ export class ButtonExampleComponent implements OnInit {
   public confirmButtonConfig: ButtonConfig;
   public deleteButtonConfig: ButtonConfig;
   public keyButtonConfig: ButtonConfig;
-  
+  public daisabledButtonConfig: ButtonConfig;
+
   constructor() {
     this.defaultButtonConfig = {
       value: 'Default Button',
@@ -34,8 +35,7 @@ export class ButtonExampleComponent implements OnInit {
       type: 'button',
       id: 'dangerButton',
       name: 'dangerButton',
-      className: 'sps-btn sps-btn--delete',
-      disabled: true
+      className: 'sps-btn sps-btn--delete'
     };
 
     this.keyButtonConfig = {
@@ -44,6 +44,15 @@ export class ButtonExampleComponent implements OnInit {
       id: 'keyButton',
       name: 'keyButton',
       className: 'sps-btn sps-btn--key'
+    };
+
+    this.daisabledButtonConfig = {
+      value: 'Key Button',
+      type: 'button',
+      id: 'keyButton',
+      name: 'keyButton',
+      className: 'sps-btn sps-btn--key',
+      disabled: true
     };
   }
 
