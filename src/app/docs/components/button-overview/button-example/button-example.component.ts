@@ -9,58 +9,41 @@ import { ButtonConfig } from '../../../../modules/button/button.config';
 })
 export class ButtonExampleComponent implements OnInit {
   public defaultButtonConfig: ButtonConfig;
-  public primaryButtonConfig: ButtonConfig;
-  public successButtonConfig: ButtonConfig;
-  public dangerButtonConfig: ButtonConfig;
-  public warnButtonConfig: ButtonConfig;
-  public linkButtonConfig: ButtonConfig;
+  public confirmButtonConfig: ButtonConfig;
+  public deleteButtonConfig: ButtonConfig;
+  public keyButtonConfig: ButtonConfig;
+  
   constructor() {
     this.defaultButtonConfig = {
       value: 'Default Button',
       type: 'Cancel',
       id: 'defaultButton',
       name: 'defaultButton',
-      className: 'btn btn-default'
+      className: 'sps-btn sps-btn--default'
     };
 
-    this.primaryButtonConfig = {
-      value: 'Primary Button',
-      type: 'Reset',
-      id: 'primaryButton',
-      name: 'primaryButton',
-      className: 'btn btn-primary'
+    this.confirmButtonConfig = {
+      value: 'Confirm Button',
+      id: 'confirmButton',
+      name: 'confirmButton',
+      className: 'sps-btn sps-btn--confirm'
     };
 
-    this.successButtonConfig = {
-      value: 'Success Button',
-      type: 'submit',
-      id: 'successButton',
-      name: 'successButton',
-      className: 'btn btn-success'
-    };
-
-    this.dangerButtonConfig = {
-      value: 'Danger Button',
+    this.deleteButtonConfig = {
+      value: 'Delete Button',
       type: 'button',
       id: 'dangerButton',
       name: 'dangerButton',
-      className: 'btn btn-danger',
+      className: 'sps-btn sps-btn--delete',
       disabled: true
     };
 
-    this.warnButtonConfig = {
-      value: 'Warning Button',
+    this.keyButtonConfig = {
+      value: 'Key Button',
       type: 'button',
-      id: 'warnButton',
-      name: 'warnButton',
-      className: 'btn btn-warning'
-    };
-
-    this.linkButtonConfig = {
-      value: 'Link Button',
-      type: 'linkButton',
-      name: 'linkButton',
-      className: 'btn btn-link'
+      id: 'keyButton',
+      name: 'keyButton',
+      className: 'sps-btn sps-btn--key'
     };
   }
 
