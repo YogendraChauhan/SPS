@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './button-api.component.html',
   styleUrls: ['./button-api.component.sass']
 })
+
 export class ButtonApiComponent implements OnInit {
   public exportedAs: string;
 
@@ -13,7 +14,6 @@ export class ButtonApiComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.exportedAs = 'spsButton';
+    this.exportedAs = 'spsStandardButton';
   }
-
 }
