@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "dev-center-demo"
+    "name": "sps-ui-components"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "docs",
       "assets": [
         "assets",
         "favicon.ico"
@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "sps",
       "styles": [
-        "styles.sass",
+        "styles.scss",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
         "../node_modules/font-awesome/css/font-awesome.css"
       ],
@@ -56,7 +56,8 @@
     }
   },
   "defaults": {
-    "styleExt": "sass",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }

@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('dev-center-demo App', () => {
+describe('sps-ui-components App', () => {
   let page: AppPage;
 
   beforeEach(() => {

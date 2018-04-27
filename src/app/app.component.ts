@@ -1,14 +1,11 @@
 // Angular imports
 import { Component } from '@angular/core';
-
-// Local imports
-import { ButtonConfig } from './modules/button/button.config';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'sps-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent {

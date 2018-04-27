@@ -5,7 +5,7 @@ import { ButtonConfig } from './button.config';
 @Component({
   selector: 'sps-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.sass']
+  styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
   @Input('options') options: ButtonConfig;

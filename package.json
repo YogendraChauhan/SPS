@@ -1,6 +1,6 @@
 {
-  "name": "dev-center-demo",
-  "version": "1.0.0",
+  "name": "sps-ui-components",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

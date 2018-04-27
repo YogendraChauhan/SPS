@@ -4,7 +4,7 @@ import { SpinnerConfig } from './spinner.config';
 @Component({
   selector: 'sps-spinner',
   templateUrl: './spinner.component.html',
-  styleUrls: ['./spinner.component.sass']
+  styleUrls: ['./spinner.component.scss']
 })
 export class SpinnerComponent implements OnInit {
   @Input()
