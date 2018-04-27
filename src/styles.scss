@@ -4,6 +4,16 @@ html, body {
   font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
+code {
+  font-size: 87.5%;
+  color: #007bff !important;
+  word-break: break-word;
+}
+
 #main_container {
   padding-top: 60px;
   header {
